@@ -19,9 +19,11 @@ This respository is dedicated to nuclei templates I've created for CVEs and othe
 |  |  |
 
 ## Usage
-1. Clone this repository: `git clone https://github.com/your-username/nuclei-templates.git`
-2. Install Nuclei: Follow the [official installation guide](https://github.com/projectdiscovery/nuclei#installing-nuclei).
-3. Run Nuclei with the desired templates: `nuclei -t nuclei-templates/http/cves -u example.com`
+1. Clone this repository: ```git
+git clone https://github.com/your-username/nuclei-templates.git```
+3. Install Nuclei: Follow the [official installation guide](https://github.com/projectdiscovery/nuclei#installing-nuclei).
+4. Run Nuclei with the desired templates: ```
+nuclei -t nuclei-templates/http/cves -u example.com```
 
 Feel free to explore and customize these templates based on your specific testing requirements.
 
