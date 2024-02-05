@@ -7,7 +7,7 @@
 
 ## Overview
 
-This respository is dedicated to nuclei templates I've created for CVEs and other vulnerabilities discovered.
+This respository is dedicated to nuclei templates I've created for CVEs and other vulnerabilities discovered. Credit is given to creators of the HackTheBox challenges and the rest of the application security community.
 
 ## Table of Contents
 
