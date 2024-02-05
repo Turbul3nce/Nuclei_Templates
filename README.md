@@ -15,7 +15,7 @@ This respository is dedicated to nuclei templates I've created for CVEs and othe
 | ------------- | ----------------------------------------- |
 | [cves](./http/cves)   | Templates focusing on known CVEs.             |
 | [fuzzing](./http/fuzzing) | Templates designed for application fuzzing. |
-| [bugbounty](./http/vulnerabilities) | Templates focusing on vulnerabilities.       |
+| [vulnerabilities](./http/vulnerabilities) | Templates focusing on vulnerabilities.       |
 |  |  |
 
 ## Usage
