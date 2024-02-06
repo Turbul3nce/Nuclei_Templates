@@ -9,7 +9,7 @@ info:
   impact: |
     Allows attacks to ptentially server harmful HTTP responses to other users.
   metadata:
-    verified: true
+    verified: false
   tags: web,cache,poisioning,headers
 
 http:
