@@ -14,7 +14,7 @@ This respository is dedicated to nuclei templates I've created for CVEs and othe
 | Folder        | Description                               |
 | ------------- | ----------------------------------------- |
 | [cves](./http/cves)   | Templates focusing on known CVEs.             |
-| [fuzzing](./http/fuzzing) | Templates designed for application fuzzing. |
+| [printers](./http/printers) | Templates designed for printers(Easy Pwns). |
 | [vulnerabilities](./http/vulnerabilities) | Templates focusing on vulnerabilities.       |
 |  |  |
 
