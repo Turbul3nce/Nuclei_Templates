@@ -5,21 +5,11 @@ info:
   author: RosePwns
   severity: high
   description: |
-    This web application is using a caching system. By sending a request with a X-Forwarded-Host header, we can overide the Host header and force the caching system to cache a response that contains a redirect to our server. From here, malicious content could be served to clients.
+    This web application is using a caching system. By sending a request with a X-Forwarded-Host header, we can overide the Host header and force the caching system to cache a response that contains a redirect to our server.
   impact: |
-    allows attackers to target and access internal applications that are meant to be hidden by the reverse proxy, potentially leading to unauthorized access, data leakage, or further exploitation.
-  remediation: Fixed 2.4.56
-  reference:
-    - https://nvd.nist.gov/vuln/detail/CVE-2023-25690
-    - https://github.com/dhmosfunk/CVE-2023-25690-POC
-  classification:
-    cvss-metrics: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-    cvss-score: 9.8
-    cve-id: CVE-2023-25690
-    cwe-id: CWE-444
+    Allows attacks to ptentially server harmful HTTP responses to other users.
   metadata:
     verified: true
-    Affected: Apache server mod_proxy configurations
   tags: apache,cve,proxy,http,smuggling
 
 http:
