@@ -1,4 +1,4 @@
-id: cache-poisoning-via-headers
+id: cache-poisoning--oob-test
 
 info:
   name:  Web Cache Poisoning via Headers
