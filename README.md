@@ -28,6 +28,6 @@ nuclei -t Nuclei_Templates/http/cves -u example.com```
 Feel free to explore and customize these templates based on your specific testing requirements.
 
 ## Acknowledgements
-We appreciate the Nuclei project by Project Discovery for providing an excellent foundation for effective and scalable vulnerability scanning. Special thanks to the community for sharing valuable insights and contributing to the continuous improvement of security testing tools.
+I appreciate the Nuclei project by Project Discovery for providing an excellent foundation for effective and scalable vulnerability scanning. Special thanks to the community for sharing valuable insights and contributing to the continuous improvement of security testing tools.
 
 Happy scanning and happy hunting!
