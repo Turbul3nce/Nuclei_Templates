@@ -26,6 +26,8 @@ git clone https://github.com/RosePwns/Nuclei_Templates.git```
 nuclei -t Nuclei_Templates/http/cves -u example.com```
 
 Feel free to explore and customize these templates based on your specific testing requirements.
+<br> 
+Also, be sure to actually review templates before running them. Certain templates may need adjustmnets based on testing enviorments/targets.
 
 ## Acknowledgements
 I appreciate the Nuclei project by Project Discovery for providing an excellent foundation for effective and scalable vulnerability scanning. Special thanks to the community for sharing valuable insights and contributing to the continuous improvement of security testing tools.
